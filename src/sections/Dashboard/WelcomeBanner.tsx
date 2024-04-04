@@ -73,6 +73,7 @@ export function WelcomeBanner() {
       <div>
         <h1>WELCOME TO DOGGO GAMES</h1>
         <p>the first MEME COIN on SOLANA with a real use case!</p>
+        <img src="url(${backgroundImg});" alt="" />
       </div>
     </Welcome>
   )
