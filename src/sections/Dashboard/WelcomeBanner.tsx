@@ -67,6 +67,7 @@ const Welcome = styled.div`
   justify-content: center;
   flex-direction: column;
   padding: 20px;
+  font-size: 2rem;
 
   & img {
     animation-duration: 5s;
