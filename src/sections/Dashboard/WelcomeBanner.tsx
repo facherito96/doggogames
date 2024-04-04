@@ -38,26 +38,7 @@ const Buttons = styled.div`
 `
 
 const Welcome = styled.div`
-  @keyframes welcome-fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes backgroundGradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+  
   background-image: url(${backgroundImg});
   background-size: 300% 300%;
   border-radius: 10px;
