@@ -58,7 +58,7 @@ const Welcome = styled.div`
     }
   }
 
-  background: url(try.png);
+  background: linear-gradient(-45deg, #ffb07c, #ff3e88, #2969ff, #ef3cff, #ff3c87);
   background-size: 300% 300%;
   border-radius: 10px;
   position: relative;
@@ -98,9 +98,6 @@ const Welcome = styled.div`
 export function WelcomeBanner() {
   return (
     <Welcome>
-      <div>
-      </div>
-      
     </Welcome>
   )
 }
