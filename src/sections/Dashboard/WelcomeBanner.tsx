@@ -58,7 +58,7 @@ const Welcome = styled.div`
     }
   }
 
-  background: trasparent;
+  background: url(try.png);
   background-size: 300% 300%;
   border-radius: 10px;
   position: relative;
@@ -99,7 +99,6 @@ export function WelcomeBanner() {
   return (
     <Welcome>
       <div>
-        <img src="/try.png" alt="" />
       </div>
       
     </Welcome>
