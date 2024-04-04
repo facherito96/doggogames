@@ -98,7 +98,7 @@ const Welcome = styled.div`
 export function WelcomeBanner() {
   return (
     <Welcome>
-      <div><img src="/Dashboard/try.png" alt="" /></div>
+      <img src="/try.png" alt="" />
     </Welcome>
   )
 }
