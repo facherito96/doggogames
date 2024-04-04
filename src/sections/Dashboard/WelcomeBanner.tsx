@@ -98,6 +98,9 @@ const Welcome = styled.div`
 export function WelcomeBanner() {
   return (
     <Welcome>
+      <div>
+        <img src="vscode-vfs://github/facherito96/doggogames/public/try.png" alt="" />
+      </div>
       
     </Welcome>
   )
