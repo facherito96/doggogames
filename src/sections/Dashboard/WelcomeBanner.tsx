@@ -105,17 +105,7 @@ export function WelcomeBanner() {
           A fair, simple and decentralized casino on Solana.
         </p>
       </div>
-      <Buttons>
-        <button onClick={() => window.open('https://v2.gamba.so/', '_blank')}>
-          🚀 Add Liqudity
-        </button>
-        <button onClick={() => window.open('https://github.com/gamba-labs/gamba', '_blank')}>
-          👨‍💻 Build your own
-        </button>
-        <button onClick={() => window.open('https://discord.gg/HSTtFFwR', '_blank')}>
-          💬 Discord
-        </button>
-      </Buttons>
+      
     </Welcome>
   )
 }
