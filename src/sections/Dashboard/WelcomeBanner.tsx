@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import backgroundImg from 'https://github.com/facherito96/doggogames/blob/main/src/sections/Dashboard/try.png'
 
 const Buttons = styled.div`
   overflow: hidden;
@@ -38,7 +39,7 @@ const Buttons = styled.div`
 
 const Welcome = styled.div`
 
-  background: url(try.png)
+  background-image: url(${backgroundImg});
   background-size: 300% 300%;
   border-radius: 10px;
   position: relative;
