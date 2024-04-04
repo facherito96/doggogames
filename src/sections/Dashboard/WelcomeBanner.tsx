@@ -38,37 +38,10 @@ const Buttons = styled.div`
 `
 
 const Welcome = styled.div`
-  @keyframes welcome-fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes backgroundGradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
+  
   background: url(${backgroundImg});
-  background-size: cover;
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  padding: 20px;
   font-size: 2rem;
 
  
