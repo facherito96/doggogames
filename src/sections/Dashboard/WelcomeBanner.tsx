@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import backgroundImg from 'https://github.com/facherito96/doggogames/blob/main/photo_2024-04-04_17-30-25.jpg'
 
 const Buttons = styled.div`
   overflow: hidden;
@@ -39,7 +38,6 @@ const Buttons = styled.div`
 
 const Welcome = styled.div`
   
-  background-image: url(${backgroundImg});
   background-size: 300% 300%;
   border-radius: 10px;
   position: relative;
@@ -73,7 +71,6 @@ export function WelcomeBanner() {
       <div>
         <h1>WELCOME TO DOGGO GAMES</h1>
         <p>the first MEME COIN on SOLANA with a real use case!</p>
-        <img src="url(${backgroundImg});" alt="" />
       </div>
     </Welcome>
   )
