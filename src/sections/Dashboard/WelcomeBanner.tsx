@@ -98,9 +98,6 @@ const Welcome = styled.div`
 export function WelcomeBanner() {
   return (
     <Welcome>
-      <div>
-        <h1>Welcome to DOGGO GAMES 👋</h1>
-      </div>
       
     </Welcome>
   )
