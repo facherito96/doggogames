@@ -58,7 +58,7 @@ const Welcome = styled.div`
       background-position: 0% 50%;
     }
   }
-  background: url(${backgroundImg});
+  
   background-size: 300% 300%;
   border-radius: 10px;
   position: relative;
@@ -102,6 +102,7 @@ export function WelcomeBanner() {
       <div>
         <h1>WELCOME TO DOGGO GAMES</h1>
         <p>the first MEME COIN on SOLANA with a real use case!</p>
+        <img src="https://github.com/facherito96/doggogames/blob/main/src/sections/Dashboard/try.png" alt="" />
       </div>
     </Welcome>
   )
