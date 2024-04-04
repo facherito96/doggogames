@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import backgroundImg from 'https://github.com/facherito96/doggogames/blob/main/photo_2024-04-04_17-30-25.jpg'
 
 const Buttons = styled.div`
   overflow: hidden;
@@ -57,7 +58,7 @@ const Welcome = styled.div`
       background-position: 0% 50%;
     }
   }
-
+  background-image: url(${backgroundImg});
   background-size: 300% 300%;
   border-radius: 10px;
   position: relative;
