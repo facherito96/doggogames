@@ -63,10 +63,6 @@ const Welcome = styled.div`
 export function WelcomeBanner() {
   return (
     <Welcome>
-      <div>
-        <h1>WELCOME TO DOGGO GAMES</h1>
-        <p>the first MEME COIN on SOLANA with a real use case!</p>
-      </div>
     </Welcome>
   )
 }
