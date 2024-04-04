@@ -99,7 +99,7 @@ export function WelcomeBanner() {
   return (
     <Welcome>
       <div>
-        <img src="public/try.png" alt="" />
+        <img src="try.png" alt="" />
       </div>
       
     </Welcome>
