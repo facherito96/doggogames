@@ -58,7 +58,7 @@ const Welcome = styled.div`
     }
   }
 
-  background: linear-gradient(-45deg, #ffb07c, #ff3e88, #2969ff, #ef3cff, #ff3c87);
+  background: url(/Dashboard/try.png);
   background-size: 300% 300%;
   border-radius: 10px;
   position: relative;
