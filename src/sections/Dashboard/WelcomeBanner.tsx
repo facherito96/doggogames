@@ -58,8 +58,9 @@ const Welcome = styled.div`
       background-position: 0% 50%;
     }
   }
-  
-  background-size: 300% 300%;
+
+  background: url(${backgroundImg});
+  background-size: cover;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -70,17 +71,7 @@ const Welcome = styled.div`
   padding: 20px;
   font-size: 2rem;
 
-  & img {
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    width: 100px;
-    height: 100px;
-    top: 0;
-    right: 0;
-    &:nth-child(1) {animation-delay: 0s;}
-    &:nth-child(2) {animation-delay: 1s;}
-  }
+ 
 
 
   & > div {
@@ -102,7 +93,6 @@ export function WelcomeBanner() {
       <div>
         <h1>WELCOME TO DOGGO GAMES</h1>
         <p>the first MEME COIN on SOLANA with a real use case!</p>
-        <img src="https://github.com/facherito96/doggogames/blob/main/src/sections/Dashboard/try.png" alt="" />
       </div>
     </Welcome>
   )
