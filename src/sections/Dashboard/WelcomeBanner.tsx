@@ -63,10 +63,6 @@ const Welcome = styled.div`
       padding: 40px;
     }
   }
-  @media (max-width: 768px) {
-    font-size: 1.5rem;
-    }
-  }
 `
 
 export function WelcomeBanner() {
