@@ -83,7 +83,7 @@ export function WelcomeBanner() {
   return (
     <Welcome>
       <div>
-        <h1>WELCOME TO DOGGO GAMES</h1>
+        <h1>WELCOME TO <br /> DOGGO GAMES</h1>
         <p>The first MEME COIN on SOLANA with a real use case!</p>
       </div>
       <Buttons>
