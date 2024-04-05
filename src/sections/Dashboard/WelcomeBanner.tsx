@@ -63,6 +63,10 @@ const Welcome = styled.div`
       padding: 40px;
     }
   }
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    }
+  }
 `
 
 export function WelcomeBanner() {
@@ -70,7 +74,7 @@ export function WelcomeBanner() {
     <Welcome>
       <div>
         <h1>WELCOME TO DOGGO GAMES</h1>
-        <p>the first MEME COIN on SOLANA with a real use case!</p>
+        <p>The first MEME COIN on SOLANA with a real use case!</p>
       </div>
     </Welcome>
   )
