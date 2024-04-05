@@ -108,13 +108,13 @@ export function WelcomeBanner() {
       </div>
       <Buttons>
         <button onClick={() => window.open('https://doggogames.com/', '_blank')}>
-          Website
+          WEBSITE
         </button>
         <button onClick={() => window.open('https://doggogames.com/index-2.html', '_blank')}>
           DOCS
         </button>
         <button onClick={() => window.open('https://t.me/+YfOtdtkTfH40MWJk', '_blank')}>
-          Telegram
+          TELEGRAM
         </button>
       </Buttons>
     </Welcome>
