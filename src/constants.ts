@@ -55,7 +55,7 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     mint: 'FAKE_TOKEN_MINT',
     name: 'FKDOGGO',
     symbol: 'FKDOGGO$',
-    image: '/fkdoggo.png',
+    image: 'https://github.com/facherito96/doggogames/blob/main/public/fkdoggo.png',
     baseWager: 1e9,
     decimals: 9,
     usdPrice: 0,
