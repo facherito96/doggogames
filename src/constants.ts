@@ -53,9 +53,9 @@ export const DEFAULT_POOL = POOLS[0]
 export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
   {
     mint: 'FAKE_TOKEN_MINT',
-    name: 'Fake',
-    symbol: 'FAKE',
-    image: '/fakemoney.png',
+    name: 'FKDOGGO',
+    symbol: 'FKDOGGO$',
+    image: '/fkdoggo.png',
     baseWager: 1e9,
     decimals: 9,
     usdPrice: 0,
