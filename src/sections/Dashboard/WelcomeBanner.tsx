@@ -93,7 +93,7 @@ export function WelcomeBanner() {
         <button onClick={() => window.open('https://doggogames-docs.com/', '_blank')}>
           DOCS
         </button>
-        <button onClick={() => window.open('https://t.me/+YfOtdtkTfH40MWJk', '_blank')}>
+        <button onClick={() => window.open('https://t.me/doggogames', '_blank')}>
           TELEGRAM
         </button>
       </Buttons>

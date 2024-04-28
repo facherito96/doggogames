@@ -98,4 +98,24 @@ export const GAMES: GameBundle[] = [
     },
     app: React.lazy(() => import('./Plinko')),
   },
+  {
+    id: "limbo",
+    meta: {
+      background: "#ff7d7d",
+      name: "Limbo",
+      image: "/games/limbo/limbo.png",
+      description: `Limbo challenges players to walk the fine line between ambition and caution, where every decision shapes their destiny. Set a target multiplier and place your bet, daring to defy the odds. As the stakes rise, so does the adrenaline, pushing players to test their strategy and intuition in pursuit of monumental victories, ensuring an immersive and adrenaline-fueled gaming experience.`,
+    },
+    app: React.lazy(() => import("./Limbo")),
+  },
+  {
+    id: "keno",
+    meta: {
+      background: "#317aff",
+      name: "Keno",
+      image: "/games/keno/logo.png",
+      description: `Keno beckons players into a world of strategic decision-making and anticipation, where every choice holds the potential for untold riches. Select up to 10 blocks and place your bets, eagerly awaiting the draw that will determine your fate. Whether opting for fewer numbers and the allure of substantial wins or more numbers for increased odds of success, Keno promises a riveting experience filled with excitement and possibility.`,
+    },
+    app: React.lazy(() => import("./Keno")),
+  },
 ]

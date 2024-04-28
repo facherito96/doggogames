@@ -53,28 +53,33 @@ export default function App() {
     <>
       {newcomer && (
         <Modal>
-          <h1>Welcome</h1>
-          <div style={{ position: 'relative' }}>
-            <div style={{ maxHeight: '400px', padding: '10px', overflow: 'auto', position: 'relative' }}>
-              <p><b>1. Age Requirement:</b> Must be at least 18 years old.</p>
-              <p><b>2. Legal Compliance:</b> Follow local laws responsibly.</p>
-              <p><b>3. Risk Acknowledgement:</b> Games involve risk; no guaranteed winnings.</p>
-              <p><b>4. No Warranty:</b> Games provided "as is"; operate randomly.</p>
-              <p><b>5. Limitation of Liability:</b> We're not liable for damages.</p>
-              <p><b>6. Licensing Disclaimer:</b> Not a licensed casino; for simulation only.</p>
-              <p><b>7. Fair Play:</b> Games are conducted fairly and transparently.</p>
-              <p><b>8. Data Privacy:</b> Your privacy is important to us.</p>
-              <p><b>9. Responsible Gaming:</b> Play responsibly; seek help if needed.</p>
-            </div>
-            <div style={{ background: 'linear-gradient(180deg, transparent, #15151f)', height: '50px', pointerEvents: 'none', width: '100%', position: 'absolute', bottom: '0px', left: '0px' }}></div>
+        <h1>Welcome to DOGGO GAMES</h1>
+        <div style={{ position: 'relative' }}>
+          <div style={{ maxHeight: '400px', padding: '10px', overflow: 'auto', position: 'relative' }}>
+            <p><b>🐶 DOGGO$: Where Casino Games and crypto collide, bringing you laid-back meme fiesta and daily LIVE NIGHT CASINO EVENT</b></p>
+            <p><b>🐾 20+ International and local groups/channel</b></p>
+            <p><b>🚀 100+ KOLS</b></p>
+            <p><b>🔒 10+ International YouTubers</b></p>
+            <p><b>⚙️ CMC Fast Tracking Listing PAID</b></p>
+            <p><b>🥶 50k+ Marketing Budget</b> </p>
+            <p><b>💻 Shilling + Raids 24/7</b> </p>
+            <p><b>🔍 AMA + DOXX + AUDIT + KYC Badges on PinkSale</b> </p>
+            <p><b>💯 AIRDROP is LIVE with 2.1000.000 DOGGO$</b></p>
+            <p><b>😁 MEME CONTEST prize pool 500$</b></p>
+            <p><b>💰 No private sale No VCs</b></p>
+            <a href="https://doggogames.com/"><p><b>https://doggogames.com/</b></p></a>
+            <a href="https://twitter.com/SolDoggoGames"><p><b>https://twitter.com/SolDoggoGames</b></p></a>
+            <a href="https://t.me/doggogames"><p><b>https://t.me/doggogames</b></p></a>
           </div>
-          <p>
-            By playing on our platform, you confirm your compliance.
-          </p>
-          <GambaUi.Button main onClick={() => set({ newcomer: false })}>
-            Acknowledge
-          </GambaUi.Button>
-        </Modal>
+          <div style={{ background: 'linear-gradient(180deg, transparent, #15151f)', height: '50px', pointerEvents: 'none', width: '100%', position: 'absolute', bottom: '0px', left: '0px' }}></div>
+        </div>
+        <p>
+          By playing on our platform, you confirm your compliance.
+        </p>
+        <GambaUi.Button main onClick={() => set({ newcomer: false })}>
+          Acknowledge
+        </GambaUi.Button>
+      </Modal>
       )}
       <ScrollToTop />
       <ErrorHandler />
@@ -85,7 +90,7 @@ export default function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/:gameId" element={<Game />} />
         </Routes>
-        <h2 style={{ textAlign: 'center' }}>RECENT PLAYS</h2>
+        <h2 style={{ textAlign: 'center' }}>Recent Plays</h2>
         <RecentPlays />
       </StyledSection>
     </>
