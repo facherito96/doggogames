@@ -209,18 +209,7 @@ export default function Keno() {
             zIndex: 1000,
           }}
         >
-          <a
-            href="https://x.com/bankkroll_eth"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              fontSize: "14px",
-              color: "#fff",
-              padding: "10px",
-            }}
-          >
-            BankkmaticGames
-          </a>
+          
         </div>
       </GambaUi.Portal>
       <GambaUi.Portal target="controls">
