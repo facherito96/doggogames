@@ -44,6 +44,13 @@ const color = (value: number) => {
   if (value <= 1) return 'green'
   if (value <= 2) return 'red'
   if (value <= 10) return 'blue'
+  if (value <= 100) return 'green'
+  if (value <= 1000) return 'red'
+  if (value <= 10000) return 'blue'
+  if (value <= 50000) return 'green'
+  if (value <= 100000) return 'red'
+  if (value <= 250000) return 'blue'
+  if (value <= 500000) return 'green'
   return 'white'
 }
 
