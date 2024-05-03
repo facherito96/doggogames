@@ -1,7 +1,7 @@
-WEBSITE: [https://](https://doggogames.com/) 
+WEBSITE: https://doggogames.com/
 
 
-TG: [https://t.me/sol](https://t.me/SOLDOGGOGAMES)
+TG: https://t.me/SOLDOGGOGAMES
 
 
 X: https://twitter.com/SolDoggoGames
