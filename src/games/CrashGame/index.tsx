@@ -3,7 +3,7 @@ import React from 'react'
 import CustomSlider from './Slider'
 import CRASH_SOUND from './crash.mp3'
 import SOUND from './music.mp3'
-import { LineLayer1, LineLayer2, LineLayer3, MultiplierText, Rocket, ScreenWrapper, StarsLayer1, StarsLayer2, StarsLayer3 } from './styles'
+import { LineLayer1, LineLayer2, LineLayer3, LineLayer4, LineLayer5, LineLayer6, LineLayer7, LineLayer8, LineLayer9, LineLayer10, MultiplierText, Rocket, ScreenWrapper, StarsLayer1, StarsLayer2, StarsLayer3, StarsLayer5, StarsLayer6, StarsLayer7, StarsLayer8, StarsLayer9, StarsLayer10,  } from './styles'
 import { calculateBetArray } from './utils'
 import WIN_SOUND from './win.mp3'
 
@@ -93,12 +93,26 @@ export default function CrashGame() {
     <>
       <GambaUi.Portal target="screen">
         <ScreenWrapper>
-          <StarsLayer1 style={{ opacity: currentMultiplier > 3 ? 0 : 1 }} />
-          <LineLayer1 style={{ opacity: currentMultiplier > 3 ? 1 : 0 }} />
-          <StarsLayer2 style={{ opacity: currentMultiplier > 2 ? 0 : 1 }} />
-          <LineLayer2 style={{ opacity: currentMultiplier > 2 ? 1 : 0 }} />
-          <StarsLayer3 style={{ opacity: currentMultiplier > 1 ? 0 : 1 }} />
-          <LineLayer3 style={{ opacity: currentMultiplier > 1 ? 1 : 0 }} />
+        <StarsLayer1 style={{ opacity: currentMultiplier > 5 ? 0 : 1 }} />
+          <LineLayer1 style={{ opacity: currentMultiplier > 5 ? 1 : 0 }} />
+          <StarsLayer2 style={{ opacity: currentMultiplier > 4.5 ? 0 : 1 }} />
+          <LineLayer2 style={{ opacity: currentMultiplier > 4.5 ? 1 : 0 }} />
+          <StarsLayer3 style={{ opacity: currentMultiplier > 4 ? 0 : 1 }} />
+          <LineLayer3 style={{ opacity: currentMultiplier > 4 ? 1 : 0 }} />
+          <StarsLayer4 style={{ opacity: currentMultiplier > 3.5 ? 0 : 1 }} />
+          <LineLayer4 style={{ opacity: currentMultiplier > 3.5 ? 1 : 0 }} />
+          <StarsLayer5 style={{ opacity: currentMultiplier > 3 ? 0 : 1 }} />
+          <LineLayer5 style={{ opacity: currentMultiplier > 3 ? 1 : 0 }} />
+          <StarsLayer6 style={{ opacity: currentMultiplier > 2.5 ? 0 : 1 }} />
+          <LineLayer6 style={{ opacity: currentMultiplier > 2.5 ? 1 : 0 }} />
+          <StarsLayer7 style={{ opacity: currentMultiplier > 2 ? 0 : 1 }} />
+          <LineLayer7 style={{ opacity: currentMultiplier > 2 ? 1 : 0 }} />
+          <StarsLayer8 style={{ opacity: currentMultiplier > 1.5 ? 0 : 1 }} />
+          <LineLayer8 style={{ opacity: currentMultiplier > 1.5 ? 1 : 0 }} />
+          <StarsLayer9 style={{ opacity: currentMultiplier > 1 ? 0 : 1 }} />
+          <LineLayer9 style={{ opacity: currentMultiplier > 1 ? 1 : 0 }} />
+          <StarsLayer10 style={{ opacity: currentMultiplier > 0.5 ? 0 : 1 }} />
+          <LineLayer10 style={{ opacity: currentMultiplier > 0.5 ? 1 : 0 }} />
           <MultiplierText color={multiplierColor}>
             {currentMultiplier.toFixed(2)}x
           </MultiplierText>
