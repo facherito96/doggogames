@@ -1,99 +1,135 @@
 import React from 'react'
 import styled from 'styled-components'
-import rocketIcon from './rocket.gif'
 
-const SliderContainer = styled.div`
+interface SliderProps {
+  min: number;
+  max: number;
+  value: number;
+  range: [number, number];
+  onChange: (value: number) => void;
+  disabled?: boolean;
+}
+
+const Container = styled.div`
   position: relative;
   width: 100%;
-  padding: 10px 0;
-`
+`;
 
-const Slider = styled.input.attrs({ type: 'range' })`
+const Wrapper = styled.div`
+  position: relative;
+  background: #ff556a;
+  border-radius: 10px;
+  box-shadow: 0 0 0px 5px #32294355;
+  transition: box-shadow 0.2s ease;
+  height: 15px;
+  opacity: 1;
+  cursor: pointer;
+`;
+
+const Track = styled.div`
+  background: #55f275;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+`;
+
+const StyledSlider = styled.input.attrs({ type: "range" })`
+  position: absolute;
+  left: 0;
+  top: 0;
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
-  height: 8px;
-  border-radius: 5px;
-  background: #d3d3d3;
+  height: 100%;
+  background: transparent;
   outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+  cursor: pointer;
 
-  &:hover {
-    opacity: 1;
+  &:disabled {
+    cursor: default;
   }
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-image: url(${rocketIcon});
-    background-size: 100% 100%;
+    width: 25px;
+    height: 50px;
+    background-image: url("/games/crash/rocket.gif");
+    background-size: cover;
+    background-position: center;
     cursor: pointer;
   }
 
-  /* The slider handle (thumb) for Firefox */
   &::-moz-range-thumb {
-    width: 30px;
+    width: 30px; // Adjust the size as needed
     height: 30px;
-    border-radius: 50%;
-    background-image: url(${rocketIcon});
-    background-size: 100% 100%;
+    background-image: url("/games/crash/rocket.gif");
+    background-size: cover;
+    background-position: center;
     cursor: pointer;
+    border-radius: 50%;
   }
-`
+`;
 
-interface CustomSliderProps {
-  value: number
-  onChange: (value: number) => void
-}
+const Label = styled.div<{ $active: boolean }>`
+  margin-top: 10px;
+  position: absolute;
+  transform: translateX(-50%);
+  text-align: center;
+  background: #32294322;
+  padding: 5px;
+  border-radius: 10px;
+  min-width: 30px;
+  color: #ff949f;
+  transition: left 0.2s ease;
+  font-size: 75%;
 
+  ${(props) =>
+    props.$active &&
+    css`
+      color: #94ff94;
+    `}
+`;
 
-export default function CustomSlider({ value, onChange }: CustomSliderProps) {
-  // First half of slider represents multipliers 1 to 10, second half 10-100
-  const multipliers = React.useMemo(
-    () => {
-      return Array.from({ length: 101 })
-        .map(
-          (_, i) => {
-            if (i <= 50) {
-              return Math.round((1 + (9 * (i / 50))) * 4) / 4
-            }
-            return Math.round(10 + (90 * ((i - 50) / 50)))
-          },
-        )
-    },
-    [],
-  )
+function Slider({
+  min: minValue,
+  max: maxValue,
+  value,
+  onChange,
+  disabled,
+  range: [min, max],
+}: SliderProps) {
+  const labels = Array.from({ length: 5 }).map(
+    (_, i, arr) => min + Math.floor((i / (arr.length - 1)) * (max - min)),
+  );
 
-  const handleSliderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    onChange(multipliers[Number(e.target.value)])
-  }
-
-  const sliderValue = multipliers.indexOf(value)
+  const change = (newValue: number) => {
+    const fixedValue = Math.max(minValue, Math.min(maxValue, newValue));
+    if (fixedValue !== value) onChange(fixedValue);
+  };
 
   return (
-    <SliderContainer>
-      <div
-        style={{
-          bottom: '30px',
-          left: '50%',
-        }}
-      >
-        {value.toFixed(2)}x
-      </div>
-      <Slider
-        type="range"
-        min="0"
-        max="100"
-        value={sliderValue}
-        onChange={handleSliderChange}
-      />
-    </SliderContainer>
-  )
+    <Container>
+      <Wrapper>
+        <Track style={{ width: `calc(${(value / max) * 100}%)` }} />
+        <StyledSlider
+          value={value}
+          disabled={disabled}
+          min={min}
+          max={max}
+          onChange={(event) => change(Number(event.target.value))}
+        />
+      </Wrapper>
+      {labels.map((label, i) => (
+        <Label
+          key={i}
+          $active={value >= label}
+          style={{ left: (label / max) * 100 + "%" }}
+        >
+          {label}
+        </Label>
+      ))}
+    </Container>
+  );
 }
 
-
+export default Slider;
