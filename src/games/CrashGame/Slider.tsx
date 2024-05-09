@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import rocketIcon from './rocket.gif'
 
 const SliderContainer = styled.div`
   position: relative;
