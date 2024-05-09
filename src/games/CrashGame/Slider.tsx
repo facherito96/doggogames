@@ -1,5 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
+// src/games/Crash/Slider.tsx
+
+import styled, { css } from "styled-components";
+
+import React from "react";
 
 interface SliderProps {
   min: number;

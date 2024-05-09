@@ -1,3 +1,4 @@
+// src/games/Crash/styles.ts
 import styled, { keyframes } from "styled-components";
 
 const generateMultipleBoxShadows = (
